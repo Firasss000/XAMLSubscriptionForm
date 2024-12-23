@@ -1,0 +1,39 @@
+﻿
+    
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.RegistrationPage">
+    
+    <ContentPage.Content>
+        <StackLayout Padding="30" VerticalOptions="Center">
+            <!--Titre de la page -->
+            <Label Text="Bienvenu a la page d'inscription"
+                   FontSize="Large"
+                   HorizontalOptions="Center"/>
+            <!--Username-->
+            <Entry x:Name="UsernameEntry"
+                   Placeholder="Username"
+                   Margin="0,10,0,0"/>
+            <!--Email-->
+            <Entry x:Name="EmailEntry"
+                   Placeholder="Email"
+                   Keyboard="Email"/>
+            <!--Password-->
+            <Entry x:Name="PasswordEntry"
+                   Placeholder="Password"
+                   IsPassword="True" />
+            <!-- Terms & Conditions -->
+            <StackLayout Orientation="Horizontal">
+                <Switch x:Name="TermsSwitch"/>
+                <Label Text="j'accepte les termes et conditions"
+                       VerticalOptions="Center"/>                    
+            </StackLayout>
+            <!--Inscription Button-->
+            <Button Text="Subscribe"
+                    BackgroundColor="#3498db"
+                    TextColor="White"
+                    Clicked="OnRegisterClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

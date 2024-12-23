@@ -1,0 +1,28 @@
+﻿
+    
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.FormPage">
+    <ContentPage.Content>
+        <StackLayout Padding="20" Spacing="20">
+            <!-- Nom d'utilisateur -->
+            <Entry x:Name="UserNameEntry" Placeholder="Username" />
+
+            <!-- Adresse e-mail -->
+            <Entry x:Name="EmailEntry" Placeholder="Email" Keyboard="Email"/>
+
+            <!-- Numéro de téléphone -->
+            <Entry x:Name="TelephoneEntry" Placeholder="Phone" Keyboard="Telephone"/>
+
+            <!-- Mot de passe -->
+            <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True"/>
+
+            <!-- Confirmer le mot de passe -->
+            <Entry x:Name="ConfirmPasswordEntry" Placeholder="Confirm Password" IsPassword="True"/>
+
+            <!-- Bouton d'inscription -->
+            <Button Text="Subscribe" BackgroundColor="#3498db" TextColor="White" Clicked="OnSignUpButtonClicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
